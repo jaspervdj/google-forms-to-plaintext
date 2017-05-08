@@ -1,0 +1,29 @@
+Name:                google-forms-to-plaintext
+Version:             0.1.0.0
+Synopsis:            Turn google form responses into plaintext files
+Description:         Turn google form responses into plaintext files
+License:             BSD3
+License-file:        LICENSE
+Author:              Jasper Van der Jeugt <m@jaspervdj.be>
+Maintainer:          Jasper Van der Jeugt <m@jaspervdj.be>
+Copyright:           2017 Jasper Van der Jeugt
+Category:            Text
+Build-type:          Simple
+Cabal-version:       >=1.10
+
+Extra-source-files:
+  CHANGELOG.md
+  README.md
+
+Executable google-forms-to-plaintext
+  Main-is:             Main.hs
+  Hs-source-dirs:      src
+  Default-language:    Haskell2010
+  Ghc-options:         -Wall
+
+  Build-depends:
+    base                 >= 4.9  && < 4.10,
+    bytestring           >= 0.10 && < 0.11,
+    cassava              >= 0.4  && < 0.5,
+    unordered-containers >= 0.2  && < 0.3,
+    vector               >= 0.12 && < 0.13
